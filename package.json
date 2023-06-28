@@ -1,6 +1,6 @@
 {
   "name": "@chowdr-co/cordova-plugin-ionic",
-  "version": "5.5.3",
+  "version": "5.5.3-chowdr.2",
   "cordova": {
     "id": "cordova-plugin-ionic",
     "platforms": [

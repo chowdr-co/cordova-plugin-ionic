@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-ionic",
+  "name": "@chowdr-co/cordova-plugin-ionic",
   "version": "5.5.3",
   "cordova": {
     "id": "cordova-plugin-ionic",
@@ -27,11 +27,7 @@
     "release": "npm run build && np --any-branch",
     "docs": "./scripts/docs.sh"
   },
-  "repository": "https://github.com/ionic-team/cordova-plugin-ionic.git",
-  "issue": "https://github.com/ionic-team/cordova-plugin-ionic/issues",
-  "bugs": {
-    "url": "https://github.com/ionic-team/cordova-plugin-ionic/issues"
-  },
+  "repository": "https://github.com/chowdr-co/cordova-plugin-ionic.git",
   "keywords": [
     "ionic",
     "cordova",
@@ -52,6 +48,10 @@
     {
       "name": "William Pelrine",
       "email": "rudy@ionic.io"
+    },
+    {
+      "name": "Brian Corcoran",
+      "email": "b@chowdr.co"
     }
   ],
   "license": "MIT",
@@ -60,6 +60,7 @@
     "@angular/compiler-cli": "^9.1.1",
     "@angular/core": "^7.2.15",
     "@types/cordova": "0.0.34",
+    "@types/node": "~18.11.0",
     "jest": "^22.4.3",
     "np": "^3.0.4",
     "rimraf": "^2.6.2",

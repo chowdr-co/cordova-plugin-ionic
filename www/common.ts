@@ -138,7 +138,7 @@ class IonicDeployImpl {
         cordova.exec(async (savedPrefs: ISavedPreferences) => {
           resolve(savedPrefs);
         }, reject, 'IonicCordovaCommon', 'setPreferences', [prefs]);
-      } catch (e) {
+      } catch (e: any) {
         reject(e.message);
       }
     });
@@ -641,7 +641,7 @@ class IonicDeploy implements IDeployPluginAPI {
             }, reject, 'IonicCordovaCommon', 'getPreferences');
           }, 0);
         });
-      } catch (e) {
+      } catch (e: any) {
         channel.onIonicProReady.fire();
         reject(e.message);
       }
@@ -667,11 +667,11 @@ class IonicDeploy implements IDeployPluginAPI {
             delete prefs.availableUpdate;
           }
           if (prefs.updates) {
-            delete prefs.updates;
+            delete (prefs as any).updates;
           }
           resolve(prefs);
         }, reject, 'IonicCordovaCommon', 'getPreferences');
-      } catch (e) {
+      } catch (e: any) {
         reject(e.message);
       }
     });

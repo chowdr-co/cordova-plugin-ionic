@@ -7,6 +7,6 @@
   },
   "include": ["www/ngx/index.ts"],
   "angularCompilerOptions": {
-    "enableIvy": "partial"
+    "enableIvy": true
   }
 }
